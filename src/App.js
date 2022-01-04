@@ -7,7 +7,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <header className="App-header"></header>
         <Switch>
           <Route exact path="/teams" component={Teams} />
           <Route exact path="/players" component={Players} />
