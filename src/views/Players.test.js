@@ -1,14 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import Teams from './Teams.js';
+import Players from './Players.js';
 
-test('should render Teams to page', async () => {
+test('should render list of players to the page', async () => {
   const container = render(
     <MemoryRouter>
-      <Teams />
+      <Players />
     </MemoryRouter>
   );
-  await screen.findByText('Bridge City Sneakers', 'Lakeville Thunderfeet');
-
+  await screen.findByText('Bennie Jetts', 'Betty Grey');
   expect(container).toMatchSnapshot();
 });
